@@ -1,3 +1,24 @@
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 8px;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#content {
+  margin-top: 100px; /* To avoid overlapping with the loader */
+}
+
+
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
   }
