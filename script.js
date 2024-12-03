@@ -9,21 +9,21 @@ async function loadHTML(filePath, targetElementId) {
     }
   }
   
-  document.addEventListener('DOMContentLoaded', async () => {
+  // Load the HTML files when the page loads
+  document.addEventListener('DOMContentLoaded', async function () {
     const loader = document.getElementById('loader');
-    loader.style.display = 'block';
-  
-    const files = [
-      { filePath: 'nav.html', targetElementId: 'header' },
-    ];
+    loader.style.display = 'block'; // Show the loader
   
     try {
-      await Promise.all(files.map(file => loadHTML(file.filePath, file.targetElementId)));
+      // Load the content into the respective containers
+      await Promise.all([
+        loadHTML('nav.html', 'header'),
+      ]);
       console.log('All HTML files loaded successfully.');
     } catch (error) {
       console.error('Error loading HTML files:', error);
     } finally {
-      loader.style.display = 'none';
+      loader.style.display = 'none'; // Hide the loader after all content is loaded
     }
   });
   

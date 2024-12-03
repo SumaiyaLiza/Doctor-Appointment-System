@@ -1,25 +1,38 @@
-<nav class="navbar">
-    <div class="container">
-      <div class="navlist">
-        <div class="logo-container">
-          <img src="Images/logo.png" alt="DocTime Logo" class="logo" />
-          <div class="logo-text">
-            <h1>DocTime<sup>™</sup></h1>
-            <p>Healthcare Anytime Anywhere</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./nav.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navlist">
+          <div class="logo-container">
+            <img src="Images/logo.png" alt="DocTime Logo" class="logo" />
+            <div class="logo-text">
+              <h1>DocTime<sup>™</sup></h1>
+              <p>Healthcare Anytime Anywhere</p>
+            </div>
           </div>
+
+          <div class="menu-icon" onclick="toggleMenu()">
+            <img src="../Images/menu-icon.svg" alt="" />
+          </div>
+          <ul class="navitem">
+            <li class="listItem">
+              <a href="./consultation.html">Consultation</a>
+            </li>
+            <li class="listItem">Health Plans</li>
+            <li class="listItem">Home Diagnostics</li>
+            <li class="listItem">Employers & NGOs</li>
+            <li class="listItem">For Doctors</li>
+          </ul>
+          <button class="btn">Log in</button>
         </div>
-        <!-- Menu Icon -->
-        <div class="menu-icon" onclick="toggleMenu()">
-          <img src="../Images/menu-icon.svg" alt="" />
-        </div>
-        <ul class="navitem">
-          <li class="listItem">Consultation</li>
-          <li class="listItem">Health Plans</li>
-          <li class="listItem">Home Diagnostics</li>
-          <li class="listItem">Employers & NGOs</li>
-          <li class="listItem">For Doctors</li>
-        </ul>
-        <button class="btn">Log in</button>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </body>
+</html>
