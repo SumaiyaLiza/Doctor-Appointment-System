@@ -12,11 +12,11 @@ async function loadHTML(filePath, targetElementId) {
 
 document.addEventListener("DOMContentLoaded", async function () {
   const loader = document.getElementById("loader");
-  loader.style.display = "block"; // Show the loader
+  loader.style.display = "block"; 
 
   try {
     await Promise.all([
-      loadHTML("nav.html", "header"),
+      loadHTML("./nav/nav.html", "header"),
     ]);
     console.log("All HTML files loaded successfully.");
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const loginButton = document.querySelector("#loginBtn");
     if (loginButton) {
       loginButton.addEventListener("click", () => {
-        window.location.href = "login.html";
+        window.location.href = "./login/login.html";
       });
     }
   } catch (error) {
