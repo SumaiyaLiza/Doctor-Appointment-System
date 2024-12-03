@@ -13,8 +13,8 @@ async function loadHTML(filePath, targetElementId) {
   }
 }
 
-// Load the HTML files when the page loads
-document.addEventListener('DOMContentLoaded', function() {
+// Load the HTML files when the page loads 
+  document.addEventListener('DOMContentLoaded', function() {
   const loader = document.getElementById('loader');
   loader.style.display = 'block'; // Show the loader
 
