@@ -1,6 +1,4 @@
 import { Fetch } from "./Fetch.js";
-
-// Function to load HTML content from a given file URL and insert it into a container
 async function loadHTML(filePath, targetElementId) {
   try {
     const response = await fetch(filePath);
@@ -15,19 +13,17 @@ async function loadHTML(filePath, targetElementId) {
   }
 }
 
-// Load the HTML files when the page loads
 document.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById("loader");
   loader.style.display = "block"; // Show the loader
 
-  // Load the content into the respective containers
   Promise.all([loadHTML("nav.html", "header")])
     .then(() => {
-      loader.style.display = "none"; // Hide the loader after all content is loaded
+      loader.style.display = "none";
       console.log("All HTML files loaded successfully.");
     })
     .catch((error) => {
-      loader.style.display = "none"; // Hide the loader even if there's an error
+      loader.style.display = "none"; 
       console.error("Error loading HTML files:", error);
     });
 });
