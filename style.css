@@ -16,200 +16,196 @@
   margin-top: 100px; /* To avoid overlapping with the loader */
 }
 
-
-
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Navbar */
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #f9fafc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  
-  .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  
-  .navlist {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .logo {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .logo-text h1 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #2d2d2d;
-    margin: 0;
-  }
-  
-  .logo-text p {
-    font-size: 12px;
-    color: #666;
-    margin: 0;
-  }
-  
-  .navitem {
-    display: flex;
-    list-style: none;
-    gap: 50px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .listItem {
-    font-size: 20px;
-    font-weight: 500;
-    color: #2d2d2d;
-    cursor: pointer;
-  }
-  
-  .listItem:hover {
-    color: #007bff;
-  }
-  
-  .btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Cover */
-  .bg {
-    background-image: url('../Images/bg');
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .bg-text {
-    text-align: center;
-    color: #2d2d2d;
-    margin-bottom: 30px;
-  }
-  
-  .bg-text h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
-  .bg-text p {
-    font-size: 1.5rem;
-    color: #666;
-    width: 60rem;
-  }
-  
-  .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 1400px;
-    margin-top: 5%;
-  }
-  
-  .service-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 330px;
-    box-sizing: border-box;
-    height: 13rem;
-  }
-  
-  .service-item h3 {
-    font-size: 1rem;
-    color: #0056b3;
-    margin-bottom: 10px;
-  }
-  
-  .service-item p {
-    font-size: 15px;
-    color: #333;
-  }
-  
-  .service-item:hover {
-    transform: translateY(-10px);
-    transition: all 0.3s ease-in-out;
-    border: rgb(5, 125, 236) 1px solid;
-    cursor: pointer;
-  }
-  
-  /* Download Section */
-  .download-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .playstore {
-    width: 10rem;
-  }
-  
-  .download-text {
-    font-size: 2rem;
-    max-width: 1050px;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f9fafc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d2d2d;
+  margin: 0;
+}
+
+.logo-text p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.navitem {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d2d2d;
+  cursor: pointer;
+}
+
+.listItem:hover {
+  color: #007bff;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Cover */
+.bg {
+  background-image: url("../Images/bg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bg-text {
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 30px;
+}
+
+.bg-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.bg-text p {
+  font-size: 1.5rem;
+  color: #666;
+  width: 60rem;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 5%;
+}
+
+.service-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 330px;
+  box-sizing: border-box;
+  height: 13rem;
+}
+
+.service-item h3 {
+  font-size: 1rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 15px;
+  color: #333;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+  border: rgb(5, 125, 236) 1px solid;
+  cursor: pointer;
+}
+
+/* Download Section */
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.playstore {
+  width: 10rem;
+}
+
+.download-text {
+  font-size: 2rem;
+  max-width: 1050px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 /* End Download  Section */
 
 /* main section */
 
-.image-2{
-
-  background-image: url('../Images/bg_2');
+.image-2 {
+  background-image: url("../Images/bg_2");
   width: 100%;
   height: 70vh;
   background-repeat: no-repeat;
   margin-top: 10rem;
 }
-  
+
 /* Choose Section */
 .choose {
   display: flex;
@@ -226,17 +222,16 @@ body {
   font-size: 4rem;
   width: 720px;
   font: bold 11px;
-  
 }
 
 .choose img {
-  flex: 1; 
-  max-width: 100%; 
-  height: auto; 
+  flex: 1;
+  max-width: 100%;
+  height: auto;
 }
 
 .choose-text-p {
-  font-size: 1.70rem;
+  font-size: 1.7rem;
   width: 720px;
   text-align: start;
   line-height: 1.5;
@@ -246,9 +241,8 @@ body {
 p {
   display: flex;
   align-items: flex-start;
-  gap: 1rem; 
+  gap: 1rem;
   margin: 0 0 1rem;
-  
 }
 
 .number {
@@ -256,22 +250,22 @@ p {
   font-weight: bold;
   color: #007bff;
   position: relative;
-  display: inline-flex; 
-  flex-direction: column; 
-  align-items: center; ;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .number::after {
   content: "";
   display: block;
-  width: 1px; 
-  height: 40px; 
-  background-color: #007bff; 
-  margin-top: 5px; 
+  width: 1px;
+  height: 40px;
+  background-color: #007bff;
+  margin-top: 5px;
 }
 
 p:last-child .number::after {
-  display: none; 
+  display: none;
 }
 
 /* End choose Section */
@@ -295,7 +289,6 @@ p:last-child .number::after {
 }
 
 .section-text p {
-      
   font-size: 2rem;
   padding-left: 15px;
 }
@@ -344,58 +337,58 @@ p:last-child .number::after {
 
 /* medical help end */
 
-
-/* medical content */
+/* Medical Section Styles */
 .medical-section {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 20px;
-  background-color: #ffffff;
-}
-
-.medical-content {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
-  padding: 20px;
-}
-
-.medical-content h1 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #333;
-}
-
-.medical-content .medical-info {
+  max-width: 1400px;
+  margin: auto;
+  gap: 40px;
   margin-top: 30px;
 }
 
-.medical-content .medical-info h3 {
-  font-size: 20px;
-  color: #1e40af;
+.medical-content h1 {
+  font-size: 4rem;
+  color: #333;
+}
+
+.medical-content h4 {
+  font-size: 1.5rem;
+  color: #293557;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
-.medical-content .medical-info p {
-  font-size: 16px;
+.medical-content p {
+  font-size: 1.2rem;
   color: #555;
-  margin-bottom: 20px;
-}
-
-.medical-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 300px;
-  max-width: 400px;
+  margin-top: 20px;
 }
 
 .medical-image img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 40rem;
 }
+
+/* Medical content End */
+
+/* easy step */
+.step {
+  padding: 20px;
+  text-align: center;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.step h1 {
+  color: #333333;
+  font-size: 68px;
+  margin-bottom: 10px; 
+  margin-top: 10rem;
+}
+
+.step p {
+  color: #666666;
+  font-size: 1.5rem; 
+  line-height: 1.6; 
+}
+
+/* End Easy Step */
