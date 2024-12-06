@@ -7,9 +7,13 @@
     <title>Doctor Website</title>
   </head>
   <body>
-    <header>
-      <div id="loader" class="loader">Loading...</div>
-      <header id="header"></header>
+      <header>
+        <div id="header">
+
+          <!-- header file load here -->
+
+        </div>
+      </header>
       
       <!-- Hero Section Begin -->
       <section>
@@ -194,6 +198,13 @@
 
        <!-- easy step end -->
 
-    <script src="script.js"></script>
+
+       <!-- LoadHtml Js -->
+       <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadHtml('./nav/nav.html', 'header');
+        });
+    </script>
+    <script src="loadHtml.js"></script>
   </body>
 </html>
