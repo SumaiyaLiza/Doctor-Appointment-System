@@ -39,12 +39,11 @@ body {
   justify-content: center;
 }
 
-.rowsContainer{
+.rowsContainer {
   width: 90%;
   max-width: 1800px;
   display: flex;
   justify-content: center;
-
 }
 
 main {
@@ -54,121 +53,7 @@ main {
   grid-template-columns: 0.6fr 2fr;
 }
 
-
 /* double range input */
-
-.wrapper {
-  position: relative;
-  width: 80%;
-}
-.container {
-  position: relative;
-  width: 100%;
-}
-input[type="range"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  outline: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;100%
-  background-color: transparent;
-  pointer-events: none;
-}
-.slider-track {
-  width: 100%;
-  height: 5px;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  border-radius: 5px;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  height: 5px;
-}
-input[type="range"]::-moz-range-track {
-  -moz-appearance: none;
-  height: 5px;
-}
-input[type="range"]::-ms-track {
-  appearance: none;
-  height: 5px;
-}
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 1.7em;
-  width: 1.7em;
-  background-color: #3264fe;
-  cursor: pointer;
-  margin-top: -9px;
-  pointer-events: auto;
-  border-radius: 50%;
-}
-input[type="range"]::-moz-range-thumb {
-  -webkit-appearance: none;
-  height: 1.7em;
-  width: 1.7em;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: #3264fe;
-  pointer-events: auto;100%
-  border: none;
-}
-input[type="range"]::-ms-thumb {
-  appearance: none;
-  height: 1.7em;
-  width: 1.7em;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: #3264fe;
-  pointer-events: auto;
-}
-input[type="range"]:active::-webkit-slider-thumb {
-  background-color: #ffffff;
-  border: 1px solid #3264fe;
-}
-.values {
-  background-color: #3264fe;
-  width: 32%;
-  position: relative;
-  margin: auto;
-  padding: 10px 0;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 25px;
-  color: #ffffff;
-}
-.values:before {
-  content: "";
-  position: absolute;
-  height: 0;
-  width: 0;
-  border-top: 15px solid #3264fe;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  margin: auto;
-  bottom: -14px;
-  left: 0;
-  right: 0;
-}
-
-ul > li {
-  display: flex;
-  gap: 1rem;
-}
-
-input[type="checkbox"] {
-  width: 20px;
-}
-
-input[type="radio"] {
-  width: 20px;
-}
 
 /* double range input end */
 
@@ -186,11 +71,17 @@ input[type="radio"] {
   gap: 1rem;
 }
 
+li {
+  display: flex;
+  gap: 1rem;
+}
+
 .FilterSide {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  align-items: start;
 }
 
 li > h1,
@@ -203,7 +94,11 @@ li > p,
   font-size: var(--font-size-p);
 }
 
-.cardContainer{
+input {
+  width: 16px;
+}
+
+.cardContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -226,7 +121,6 @@ li > p,
   border-radius: 8px;
   justify-content: end;
   width: 100%;
-  
 }
 
 .card:hover {
@@ -239,10 +133,9 @@ li > p,
   display: flex;
 }
 
-.imgDiv{
+.imgDiv {
   width: 100px;
 }
-
 
 .imgDiv img {
   width: 100%;
@@ -254,14 +147,12 @@ li > p,
   gap: 0.8rem;
 }
 
-.doctorInfo > p{
+.doctorInfo > p {
   font-size: 15px;
 }
 
-
 .middleSide {
   gap: 1rem;
-  
 }
 
 .working {
@@ -276,17 +167,17 @@ li > p,
   width: 75%;
 }
 
-.fee{
+.fee {
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
-.feeTextSize{
+.feeTextSize {
   font-size: var(--font-size-h1);
   font-weight: bold;
 }
 
-.fee:hover{
+.fee:hover {
   cursor: pointer;
   color: #3264fe;
 }
@@ -294,7 +185,6 @@ li > p,
 @media (max-width: 767px) {
   .card {
     grid-template-columns: repeat(auto-fit, minmax(2800px, 1fr));
-  
   }
 }
 
@@ -304,11 +194,10 @@ li > p,
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
-  .fee{
+  .fee {
     width: 100%;
     padding: 10px;
   }
-
 }
 
 /* Large screens and below (laptops) */
@@ -323,15 +212,14 @@ li > p,
   .card {
     width: 80vw;
   }
-  .leftSide{
+  .leftSide {
     width: fit-content;
-    
   }
-  .imgDiv{
+  .imgDiv {
     flex-shrink: 1;
     width: 150px;
   }
-  .middleSide{
+  .middleSide {
     padding-left: 45px;
   }
 }
