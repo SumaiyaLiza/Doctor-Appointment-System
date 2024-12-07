@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../nav/nav.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./specialityList.css" />
-    <link rel="stylesheet" href="../nav/nav.css" />
     <title>Doctor Website</title>
   </head>
   <body>
@@ -72,137 +72,49 @@
             <h1>Sort By</h1>
             <ul>
               <li>
-                <input type="radio" />
-                <p>Relevance(Default)</p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="relevance"
+                    onchange="handleCheckboxChange(event, 'relevance')"
+                  />
+                  Relevance (Default)
+                </label>
               </li>
               <li>
-                <input type="radio" />
-                <p>Popularity</p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="popularity"
+                    onchange="handleCheckboxChange(event, 'popularity')"
+                  />
+                  Popularity
+                </label>
               </li>
               <li>
-                <input type="radio" />
-                <p>Fees:Low to High</p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="fees-low-to-high"
+                    onchange="handleCheckboxChange(event, 'fees-low-to-high')"
+                  />
+                  Fees: Low to High
+                </label>
               </li>
               <li>
-                <input type="radio" />
-                <p>High to Low</p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="fees-high-to-low"
+                    onchange="handleCheckboxChange(event, 'fees-high-to-low')"
+                  />
+                  High to Low
+                </label>
               </li>
             </ul>
           </div>
         </div>
-        <div class="cardContainer">
-          <div class="card">
-            <div class="leftSide">
-              <div class="imgDiv">
-                <img
-                  src="https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/244578/profile_photos/QBssJtiJpw7Gvqvra3YKL6gDn7aLYT0IOamHmvPe.jpg"
-                  alt=""
-                />
-              </div>
-
-              <div class="doctorInfo">
-                <h2>Dr.Tamim Islam</h2>
-                <p>MBBS,BSC(Health),MD (pediatric Hemaltolog & Oncology)</p>
-                <span style="color: #d1d1d1">Specialities</span>
-                <p>General Physician, Pediatric Hematologisht and Oncologist</p>
-              </div>
-            </div>
-
-            <div class="middleSide flexCol">
-              <div class="working">
-                <p style="color: #d1d1d1">Working in</p>
-                <p style="font-weight: bold; font-size: 1.1rem">
-                  Satkhira Medical College Hospital, Satkhira
-                </p>
-              </div>
-
-              <div class="exprerienceRating">
-                <div class="exprerience flexCol">
-                  <span>Total Exprerience</span>
-                  <span style="font-weight: bold">12+ Years</span>
-                </div>
-
-                <div class="exprerience flexCol">
-                  <span>Total Rating </span>
-                  <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fee flexCenter">
-              <div class="FeeTexts flexCenter flexCol">
-                <p>
-                  <span
-                    class="feeTextSize"
-                    style="font-size: 40px; font-weight: bold"
-                    >&#2547; 520</span
-                  >
-                  <sub>(Incl VAT)</sub>
-                </p>
-                <span>Per consultation</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="leftSide">
-              <div class="imgDiv">
-                <img
-                  src="https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/244578/profile_photos/QBssJtiJpw7Gvqvra3YKL6gDn7aLYT0IOamHmvPe.jpg"
-                  alt=""
-                />
-              </div>
-
-              <div class="doctorInfo">
-                <h2>Dr.Tamim Islam</h2>
-                <p>MBBS,BSC(Health),MD (pediatric Hemaltolog & Oncology)</p>
-                <span style="color: #d1d1d1">Specialities</span>
-                <p>General Physician, Pediatric Hematologisht and Oncologist</p>
-              </div>
-            </div>
-
-            <div class="middleSide flexCol">
-              <div class="working">
-                <p style="color: #d1d1d1">Working in</p>
-                <p style="font-weight: bold; font-size: 1.1rem">
-                  Satkhira Medical College Hospital, Satkhira
-                </p>
-              </div>
-
-              <div class="exprerienceRating">
-                <div class="exprerience flexCol">
-                  <span>Total Exprerience</span>
-                  <span style="font-weight: bold">12+ Years</span>
-                </div>
-
-                <div class="exprerience flexCol">
-                  <span>Total Rating </span>
-                  <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fee flexCenter">
-              <div class="FeeTexts flexCenter flexCol">
-                <p>
-                  <span class="feeTextSize">&#2547; 520</span>
-                  <sub>(Incl VAT)</sub>
-                </p>
-                <span>Per consultation</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="cardContainer"></div>
       </main>
     </section>
 
