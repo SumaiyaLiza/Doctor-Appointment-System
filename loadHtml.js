@@ -16,3 +16,25 @@ function loadHtml(filePath, targetElementId) {
       })
       .catch(error => console.error('Error loading HTML:', error));
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const icons = document.querySelectorAll(".step-icon img"); // Select all icons
+    const previewImage = document.getElementById("preview-image"); // Mobile preview image element
+  
+    icons.forEach((icon) => {
+      icon.addEventListener("click", () => {
+        // Remove the active class from all icons
+        icons.forEach((item) => item.classList.remove("active"));
+  
+        // Add the active class to the clicked icon
+        icon.classList.add("active");
+  
+        // Update the mobile preview image
+        const newImage = icon.getAttribute("data-image");
+        previewImage.src = newImage;
+      });
+    });
+  });
+  
+  

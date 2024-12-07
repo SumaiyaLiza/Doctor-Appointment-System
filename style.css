@@ -392,3 +392,94 @@ p:last-child .number::after {
 }
 
 /* End Easy Step */
+
+
+/* Doctor Consultation Section */
+.consultation-section {
+  background-image: url('./Images/web_view.webp');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  max-width: 1400px;
+  margin: auto;
+  height: 700px;
+  display: flex; /* Adds flex for content alignment */
+  align-items: center; /* Vertically centers the content */
+  justify-content: center; /* Horizontally centers the content */
+  color: #333; /* Default text color for contrast */
+}
+
+
+.consultation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.mobile-preview {
+  flex: 1;
+  text-align: center;
+}
+
+.mobile-preview img {
+  max-width: 55%;
+  height: auto;
+
+}
+
+.consultation-steps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.consultation-step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.step-icon img {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.step-details h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.step-details p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Default styles for the icons */
+.step-icon img {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Active state: turns the icon blue */
+.step-icon img.active {
+  background: #007bff; /* Blue color */
+  transform: scale(1.1); /* Slight zoom effect */
+  color: white;
+}

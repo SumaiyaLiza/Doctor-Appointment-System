@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>Doctor Website</title>
   </head>
   <body>
       <header>
         <div id="header">
-
           <!-- header file load here -->
-
         </div>
       </header>
       
@@ -113,16 +112,15 @@
             </div>
           </div>
         </div>
-
         <!-- End Choose section -->
       </section>
 
       <!-- medical Help Section -->
       <section class="section">
-       <div class="section-text">
-        <p>Get medical help</p>
-        <h1>Just in few taps!</h1>
-       </div>
+        <div class="section-text">
+          <p>Get medical help</p>
+          <h1>Just in few taps!</h1>
+        </div>
 
         <div class="features">
           <div class="feature">
@@ -130,7 +128,7 @@
             <h3>Easy to use</h3>
             <p>
               Get the best user experience on DocTime App. Search for a doctor
-              and get an instant consultation.  <br/> <br/> You can join the online queue
+              and get an instant consultation.  <br/><br/> You can join the online queue
               immediately, while you can continue doing other tasks at home or
               office.
             </p>
@@ -184,26 +182,87 @@
                 <p>In a fast-paced world, it is important to monitor and protect your mental health and wellbeing. Doctors can help you stay healthy whether you have symptoms at home or in your workplace of stress, smoking, anxiety, bereavement, or depression.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Medical Content End -->
+      </section>
+      <!-- Medical Content End -->
     </main>
 
-    <!-- easy step -->
-
+    <!-- Easy Step Section Begin -->
     <div class="step">
        <h1>Easy Steps To Feel Better Rapidly</h1>
-        <p>You do not have to wait in line for hours or go to the hospital to take healthcare services. Easily consult a doctor in just 10 minutes on your device at home or office.</p>
-       </div>
+       <p>You do not have to wait in line for hours or go to the hospital to take healthcare services. Easily consult a doctor in just 10 minutes on your device at home or office.</p>
+    </div>
+    <!-- Easy Step Section End -->
+    
+    <!-- Doctor Consultation Section (NEW) -->
+    <section class="consultation-section">
+      <div class="consultation-container">
+        <div class="mobile-preview">
+          <img id="preview-image" src="./Images/1.webp" alt="Mobile Mockup" />
+        </div>
+        <div class="consultation-steps">
+          <div class="consultation-step">
+            <div class="step-icon">
+              <img
+                src="./Images/video.svg"
+                alt="Search Doctor Icon"
+                data-image="./Images/1.webp"
+                data-mobile-image="./Images/mobile-2.png"
+              />
+            </div>
+            <div class="step-details">
+              <h3>Search your Doctor and Consult live on Video Call</h3>
+              <p>
+                Search your doctor by specialty or profile, pay the fee, and start
+                a secured video call.
+              </p>
+            </div>
+          </div>
+          <div class="consultation-step">
+            <div class="step-icon">
+              <img
+                src="./Images/icon.2.svg"
+                alt="Prescription Icon"
+                data-image="./Images/mobile-2.png"
+                data-mobile-image="./Images/mobile-3.png"
+              />
+            </div>
+            <div class="step-details">
+              <h3>Instant Prescription</h3>
+              <p>
+                Get your prescription uploaded by the doctor after the consultation.
+              </p>
+            </div>
+          </div>
+          <div class="consultation-step">
+            <div class="step-icon">
+              <img
+                src="./Images/icon.3.svg"
+                alt="Order Medicine Icon"
+                data-image="./Images/mobile-3.png"
+                data-mobile-image="./Images/mobile-3.png"
+              />
+            </div>
+            <div class="step-details">
+              <h3>Order medicine online and order diagnostic tests</h3>
+              <p>
+                Medicines and tests delivered quickly to your home with seamless
+                order tracking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <!-- Doctor Consultation Section End -->
 
-       <!-- easy step end -->
-
-
-       <!-- LoadHtml Js -->
-       <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            loadHtml('./nav/nav.html', 'header');
-        });
+    <!-- LoadHtml Js -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          loadHtml('./nav/nav.html', 'header');
+      });
     </script>
     <script src="loadHtml.js"></script>
   </body>

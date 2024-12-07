@@ -2,121 +2,121 @@
   {
     "id": 1,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/1/icon/EJy2QTfS3obDIMrqhjStpgjIxAckPqTihOjxV7u6.png",
-    "title": "General Physician",
+    "department": "General Physician",
     "text": "Cold, vomiting, infections, headaches or any other general health issues"
   },
   {
     "id": 2,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/2/icon/w8lHO2hWYnkjrNjXcaHsgVRK69XomxNDKJhn5a1j.png",
-    "title": "Pediatrics",
-    "text": "Healthcare for children and adolescents."
+    "department": "Pediatrics",
+    "text": "Any children's health issues, vaccinations, growth monitoring"
   },
   {
     "id": 3,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/3/icon/iprhJxlTlkcOQbc0iuXlTpei40f60x7LZOiGpBzf.png",
-    "title": "Gynecology",
+    "department": "Gynecology",
     "text": "Women's reproductive health."
   },
   {
     "id": 4,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/30/icon/ESUqhyr1GpKgxXzrxKlpAqMPypWTP6n4mbWCOI8W.png",
-    "title": "Dermatology",
+    "department": "Dermatology",
     "text": "Skin, hair, and nail care."
   },
   {
     "id": 5,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/38/icon/pCGev8fW6kbMOjzRHv9pu6dfzGCXbwutyYZtF2OO.png",
-    "title": "Cardiology",
+    "department": "Cardiology",
     "text": "Heart and cardiovascular health."
   },
   {
     "id": 6,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/11/icon/bD3DgM42G8patWS7o468h8n0ThLyoc6S8GGvuyZR.png",
-    "title": "Neurology",
+    "department": "Neurology",
     "text": "Brain and nervous system disorders."
   },
   {
     "id": 7,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/4/icon/YIvidAboz1kXm94Lk1Twlq927jEaUnZ0aQObfJCG.png",
-    "title": "Orthopedics",
+    "department": "Orthopedics",
     "text": "Musculoskeletal system health."
   },
   {
     "id": 8,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/6/icon/iHX721XYwkx13Ef3HikJ7fXIaDN0E5l4YHe6OBVW.png",
-    "title": "Endocrinology",
+    "department": "Endocrinology",
     "text": "Hormonal and metabolic disorders."
   },
   {
     "id": 9,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/7/icon/rcnfWwh0oSbSRHkzXbFz8PY1f93EXbkGehmcuE05.png",
-    "title": "Psychiatry",
+    "department": "Psychiatry",
     "text": "Mental health care and therapy."
   },
   {
     "id": 10,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/23/icon/QPx6kVGDlo4XXBUTgbynLaINsGdWrP2mTnbOCGtS.png",
-    "title": "Ophthalmology",
+    "department": "Ophthalmology",
     "text": "Eye care and vision health."
   },
   {
     "id": 11,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/46/icon/PPm7gcfecBjWDRmgWUfker6Xxf65hd11W5P9FGPE.png",
-    "title": "ENT",
+    "department": "ENT",
     "text": "Ear, nose, and throat treatments."
   },
   {
     "id": 12,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/9/icon/g3EE0R7dIyAjVbXkFE5wnlfgPmAxc4ZgWM5LFmuJ.png",
-    "title": "Gastroenterology",
+    "department": "Gastroenterology",
     "text": "Digestive system care."
   },
   {
     "id": 13,
     "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/21/icon/yWWt9tkzUq9HrrDb1NE90YpKPZPcm8CnComfvzqN.png",
-    "title": "Nephrology",
-    "text": "Kidney health and disorders."
+    "department": "Urology",
+    "text": "Urinary system health."
   },
   {
     "id": 14,
-    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/52/icon/xMquVoJdjRqkNHzHOFBqSDU0dZiWj08itVKUsGX4.png",
-    "title": "Pulmonology",
-    "text": "Respiratory system care."
+    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/13/icon/zKd197jWrkSRhHOMK7G5Oo1IVMZMfeTt4Gp1KGDZ.png",
+    "department": "Nephrology",
+    "text": "Kidney care and treatment."
   },
   {
     "id": 15,
-    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/41/icon/GCg1ic0weej7VjGHnG3jIfSXK3ORGccwCzWK8YJv.png",
-    "title": "Urology",
-    "text": "Urinary tract and male reproductive health."
+    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/22/icon/GxR5w1UzqSroqg4Nbtye4WJK32zrZ0wfl5Xt5zHJ.png",
+    "department": "Rheumatology",
+    "text": "Joint, muscle, and autoimmune disorders."
   },
   {
     "id": 16,
-    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/5/icon/tXiJ0FqEVHpAMaglKnPFCMOizkxeEFaNfXopMxgt.png",
-    "title": "Dentistry",
-    "text": "Oral health care."
+    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/39/icon/PycXaVnE3T00FTIX13xgblekQgB7HayjZtmiIgYv.png",
+    "department": "Plastic Surgery",
+    "text": "Reconstructive and cosmetic surgery."
   },
   {
     "id": 17,
-    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/22/icon/GxR5w1UzqSroqg4Nbtye4WJK32zrZ0wfl5Xt5zHJ.png",
-    "title": "Rheumatology",
-    "text": "Arthritis and autoimmune diseases."
+    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/54/icon/4SWZBuzA3ue9rVB5Y5EWLACqoMWLJvaMT2ct3tx5.png",
+    "department": "Neonatology",
+    "text": "Medical care of newborn infants, especially the ill or premature newborns."
   },
   {
     "id": 18,
-    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/13/icon/zKd197jWrkSRhHOMK7G5Oo1IVMZMfeTt4Gp1KGDZ.png",
-    "title": "Oncology",
-    "text": "Cancer treatment and care."
+    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/44/icon/cAnGa3WYYR5UH97plWP2HCUD8kINLlzew9USRuPt.png",
+    "department": "Hepatology",
+    "text": "Liver diseases."
   },
   {
     "id": 19,
-    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/8/icon/9wV8sw8LnsZEAKGAG5QQrFhWcaMFS2pNVwqbVFOC.png",
-    "title": "Hematology",
-    "text": "Blood disorders and treatments."
+    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/42/icon/1HMAMkwv4GkeUbGI47qQKJdJJ3ERnwDiNWrvGJxf.png",
+    "department": "Colorectal Surgery",
+    "text": "Diagnosis and treatment of diseases of the colon,rectum and anus."
   },
   {
     "id": 20,
-    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/16/icon/VdlUczrw6Eb8ZFZlN09wJVhphLxDuEDRuZ9rPvEC.png",
-    "title": "Allergy & Immunology",
-    "text": "Allergic reactions and immune system care."
+    "img": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/48/icon/gbC1pWAtKgu9f3w1HGbxBNk8HdDr4uaHUdqxVcQT.png",
+    "department": "Nuclear Medicine",
+    "text": "Specialized area of radiology that uses very small amounts of radioactive materials to diagnose and treat a variety of diseases."
   }
 ]
