@@ -1,7 +1,7 @@
 :root {
   --primary-color: #3498db;
   --font-size-h1: clamp(25px, 6vw, 40px); /* h1 font size */
-  --font-size-p: clamp(16px, 3.5vw, 24px); /* p font size */
+  --font-size-p: clamp(16px, 2.5vw, 20px); /* p font size */
   --font-size-title: clamp(18px, 4vw, 27px); /* p font size */
 }
 
@@ -13,9 +13,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-
 }
-
 
 .flexCol {
   display: flex;
@@ -86,7 +84,7 @@ main {
 }
 
 .cardImgDiv img {
-  width: 100%;
+  width: 85%;
   object-fit: cover;
 }
 
