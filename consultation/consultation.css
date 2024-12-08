@@ -54,7 +54,7 @@ main {
 
 .gridDiv {
   width: 100%;
-  height: 1000px;
+  /* height: 1000px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   gap: 3rem;
@@ -64,10 +64,12 @@ main {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
   justify-content: center;
-  margin-right: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 0.8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for both transform and box-shadow */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Default shadow */
 }
@@ -99,6 +101,9 @@ main {
 
 /* Medium screens and below (tablets) */
 @media (max-width: 1024px) {
+  .card {
+    width: 100%;
+  }
 }
 
 /* Large screens and below (laptops) */

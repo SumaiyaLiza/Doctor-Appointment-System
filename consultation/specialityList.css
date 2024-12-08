@@ -101,8 +101,6 @@ input {
 .cardContainer {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 2rem;
 }
@@ -120,7 +118,7 @@ input {
   transition: transform 0.3s ease-in-out;
   border-radius: 8px;
   justify-content: end;
-  width: 100%;
+  height: 250px;
 }
 
 .card:hover {
@@ -133,12 +131,8 @@ input {
   display: flex;
 }
 
-.imgDiv {
-  width: 100px;
-}
-
 .imgDiv img {
-  width: 100%;
+  width: 100px;
 }
 
 .doctorInfo {
