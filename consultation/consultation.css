@@ -1,7 +1,7 @@
 :root {
   --primary-color: #3498db;
   --font-size-h1: clamp(25px, 6vw, 40px); /* h1 font size */
-  --font-size-p: clamp(16px, 2.5vw, 20px); /* p font size */
+  --font-size-p: clamp(16px, 2.4vw, 20px); /* p font size */
   --font-size-title: clamp(18px, 4vw, 27px); /* p font size */
 }
 
