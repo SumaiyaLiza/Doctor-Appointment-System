@@ -39,10 +39,18 @@ document.addEventListener("DOMContentLoaded", () => {
   
   
 // modal
-  document.querySelectorAll('[data-bs-target="#subscribeModal"]').forEach(button => {
-    button.addEventListener('click', function () {
-      const planName = this.getAttribute('data-plan');
-      document.getElementById('subscribeModalLabel').textContent = planName;
-    });
-  });
-  
+function showModal() {
+  document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('modal').style.display = 'none';
+}
+
+// Close modal when clicking outside the modal content
+window.onclick = function(event) {
+  if (event.target == document.getElementById('modal')) {
+    closeModal();
+  }
+}
+
