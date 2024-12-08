@@ -38,3 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
   
+// modal
+  document.querySelectorAll('[data-bs-target="#subscribeModal"]').forEach(button => {
+    button.addEventListener('click', function () {
+      const planName = this.getAttribute('data-plan');
+      document.getElementById('subscribeModalLabel').textContent = planName;
+    });
+  });
+  
