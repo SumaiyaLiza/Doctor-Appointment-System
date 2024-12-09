@@ -57,23 +57,39 @@ main {
 
 /* double range input end */
 
-.sortByContainer,
-.consultationFilter {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.sortByContainer > ul,
-.consultationFilter {
+.sortByContainer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-li {
+.consultationFilter{
+  margin-top: 1rem;
+}
+
+.consultationFilter li,
+.sortByFilter li {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.consultationFilter label,
+.sortByFilter label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.consultationFilter input,
+.sortByFilter input {
+  margin-right: 8px;
+}
+
+.consultationFilter p,
+.sortByFilter p {
+  font-size: 20px;
+  margin: 0;
 }
 
 .FilterSide {
@@ -118,7 +134,7 @@ input {
   transition: transform 0.3s ease-in-out;
   border-radius: 8px;
   justify-content: end;
-  height: 250px;
+  min-height: 250px;
 }
 
 .card:hover {
@@ -130,12 +146,16 @@ input {
   gap: 1rem;
   display: flex;
 }
+.imgDiv {
+  flex: 1;
+}
 
 .imgDiv img {
-  width: 100px;
+  width: 85%;
 }
 
 .doctorInfo {
+  flex: 2;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -162,18 +182,18 @@ input {
 }
 
 .fee {
-  width: 100%;
   background-color: #f5f5f5;
-}
-
-.feeTextSize {
-  font-size: var(--font-size-h1);
-  font-weight: bold;
+  border-radius: 20px;
 }
 
 .fee:hover {
   cursor: pointer;
   color: #3264fe;
+}
+
+.feeTextSize {
+  font-size: var(--font-size-h1);
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -186,8 +206,8 @@ input {
 @media (max-width: 1024px) {
   .card {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
   }
-
   .fee {
     width: 100%;
     padding: 10px;
@@ -215,5 +235,8 @@ input {
   }
   .middleSide {
     padding-left: 45px;
+  }
+  .feeTextSize {
+    font-size: 25px;
   }
 }

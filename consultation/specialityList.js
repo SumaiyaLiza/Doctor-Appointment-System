@@ -28,6 +28,13 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
 });
 
+function clearCards() {
+  const cardContainer = document.querySelector(".cardContainer");
+  if (cardContainer) {
+    cardContainer.innerHTML = ""; // Clear all child elements
+  }
+}
+
 async function selectDoctorFilter() {
   //*param come's from consultation.js
   const urlParams = new URLSearchParams(window.location.search);
@@ -53,9 +60,100 @@ async function selectDoctorFilter() {
     doctorList.map((doctor) => {
       renderRowCards(doctor);
     });
+
+    checkboxFilter(doctorList);
   } catch (error) {
     console.log(error);
   }
+}
+
+function checkboxFilter(getData) {
+  if (getData) {
+    document.querySelectorAll("input[type='checkbox']").forEach((checkbox) => {
+      checkbox.addEventListener("change", (e) => {
+        const type = e.target.name;
+        if (e.target.checked) {
+          //*clear default load on page
+          clearCards();
+
+          switch (type) {
+            case "onlinenow":
+              getData.map((doctor) => {
+                if (doctor.online) {
+                  renderRowCards(doctor);
+                }
+              });
+              break;
+            case "nexthoursAvailable":
+              getData.map((doctor) => {
+                if (doctor.available_in_next_2_hours) {
+                  renderRowCards(doctor);
+                }
+              });
+              break;
+            case "todayAvailable":
+              getData.map((doctor) => {
+                if (doctor.available_today) {
+                  renderRowCards(doctor);
+                }
+              });
+              break;
+            case "female":
+              getData.map((doctor) => {
+                if (doctor.gender.toLowerCase() == "female") {
+                  renderRowCards(doctor);
+                }
+              });
+              break;
+
+            case "male":
+              getData.map((doctor) => {
+                if (doctor.gender.toLowerCase() == "male") {
+                  renderRowCards(doctor);
+                }
+              });
+              break;
+
+            case "default":
+              getData.map((doctor) => {
+                renderRowCards(doctor);
+              });
+              break;
+
+            case "fees-high-to-low":
+              const highTolow = sortFees(getData, "HighToLow");
+              highTolow.map((doctor) => {
+                renderRowCards(doctor);
+              });
+              break;
+
+            case "fees-low-to-high":
+              const lowToHigh = sortFees(getData, "LowToHigh");
+              lowToHigh.map((doctor) => {
+                renderRowCards(doctor);
+              });
+
+            default:
+              break;
+          }
+        } else {
+          clearCards();
+          getData.map((doctor) => {
+            renderRowCards(doctor);
+          });
+        }
+      });
+    });
+  }
+}
+
+function sortFees(data, type) {
+  if (type === "HighToLow") {
+    return [...data].sort((a, b) => b.fee.amount - a.fee.amount);
+  } else if (type === "LowToHigh") {
+    return [...data].sort((a, b) => a.fee.amount - b.fee.amount);
+  }
+  return data;
 }
 
 function renderRowCards(getdoctor) {
@@ -88,7 +186,7 @@ function renderRowCards(getdoctor) {
     <div class="card" id="${id}">
       <div class="leftSide">
         <div class="imgDiv">
-          <img src="${image}" alt="${name}" />
+          <img class="img" src="${image}" alt="${name}" />
         </div>
         <div class="doctorInfo">
           <h2>${name}</h2>
@@ -120,7 +218,7 @@ function renderRowCards(getdoctor) {
           <p>
             <span
               class="feeTextSize"
-              style="font-size: 40px; font-weight: bold"
+        
             >
               &#2547; ${fee.amount}
             </span>
@@ -160,10 +258,6 @@ function renderSpecialties(specialties) {
     .join(", ");
 }
 
-function handleCheckboxChange(event,name) {
-  console.log("dkfj");
-}
-
 selectDoctorFilter();
 renderRowCards();
-
+checkboxFilter();

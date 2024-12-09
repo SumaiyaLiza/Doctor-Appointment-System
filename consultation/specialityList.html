@@ -50,65 +50,68 @@
             </div>
             <ul class="consultationFilter">
               <li>
-                <input type="checkbox" />
-                <p>Online Now</p>
+                <label>
+                  <input name="onlinenow" type="checkbox" />
+                  <p>Online Now</p>
+                </label>
               </li>
               <li>
-                <input type="checkbox" />
-                <p>Available in next 2 hours</p>
+                <label>
+                  <input name="nexthoursAvailable" type="checkbox" />
+                  <p>Available in next 2 hours</p>
+                </label>
               </li>
               <li>
-                <input type="checkbox" />
-                <p>Available today</p>
+                <label>
+                  <input name="todayAvailable" type="checkbox" />
+                  <p>Available today</p>
+                </label>
               </li>
               <li>
-                <input type="checkbox" />
-                <p>Female Doctors only</p>
+                <label>
+                  <input name="female" type="checkbox" />
+                  <p>Female Doctors only</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input name="male" type="checkbox" />
+                  <p>Male Doctors only</p>
+                </label>
               </li>
             </ul>
           </div>
 
           <div class="sortByContainer">
             <h1>Sort By</h1>
-            <ul>
+            <ul class="sortByFilter">
               <li>
                 <label>
-                  <input
-                    type="checkbox"
-                    name="relevance"
-                    onchange="handleCheckboxChange(event, 'relevance')"
-                  />
-                  Relevance (Default)
+                  <input type="checkbox" name="default" id="relevance" />
+                  <p>Relevance (Default)</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="popularity" />
+                  <p>Popularity</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="fees-low-to-high" />
+                  <p>Fees: Low to High</p>
                 </label>
               </li>
               <li>
                 <label>
                   <input
-                    type="checkbox"
-                    name="popularity"
-                    onchange="handleCheckboxChange(event, 'popularity')"
-                  />
-                  Popularity
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="fees-low-to-high"
-                    onchange="handleCheckboxChange(event, 'fees-low-to-high')"
-                  />
-                  Fees: Low to High
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input
+                    id="checkbox"
                     type="checkbox"
                     name="fees-high-to-low"
-                    onchange="handleCheckboxChange(event, 'fees-high-to-low')"
                   />
-                  High to Low
+
+                  <p>High to Low</p>
                 </label>
               </li>
             </ul>
