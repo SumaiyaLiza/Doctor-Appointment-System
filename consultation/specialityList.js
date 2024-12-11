@@ -23,6 +23,17 @@ document.addEventListener("DOMContentLoaded", async function () {
         window.location.href = "../login/login.html";
       });
     }
+
+    // Assuming this script is in the main file where you want to load the footer
+    fetch("../Footer/footer.html")
+      .then((response) => {
+        if (!response.ok) throw new Error("Failed to fetch footer");
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector(".footer").innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading footer:", error));
   } catch (error) {
     console.error("Error loading HTML files:", error);
   }
