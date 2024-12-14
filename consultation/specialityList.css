@@ -20,6 +20,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -27,6 +28,7 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  gap: 1rem;
 }
 
 .flexCol {
@@ -57,27 +59,43 @@ main {
 
 /* double range input end */
 
-.sortByContainer,
-.consultationFilter {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.sortByContainer > ul,
-.consultationFilter {
+.sortByContainer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-li {
+.consultationFilter {
+  margin-top: 1rem;
+}
+
+.consultationFilter li,
+.sortByFilter li {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.consultationFilter label,
+.sortByFilter label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.consultationFilter input,
+.sortByFilter input {
+  margin-right: 8px;
+}
+
+.consultationFilter p,
+.sortByFilter p {
+  font-size: 20px;
+  margin: 0;
 }
 
 .FilterSide {
-  min-height: 100vh;
+  min-height: calc(100vh - 200px);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -101,8 +119,6 @@ input {
 .cardContainer {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 2rem;
 }
@@ -120,7 +136,7 @@ input {
   transition: transform 0.3s ease-in-out;
   border-radius: 8px;
   justify-content: end;
-  width: 100%;
+  min-height: 250px;
 }
 
 .card:hover {
@@ -132,16 +148,16 @@ input {
   gap: 1rem;
   display: flex;
 }
-
 .imgDiv {
-  width: 100px;
+  flex: 1;
 }
 
 .imgDiv img {
-  width: 100%;
+  width: 85%;
 }
 
 .doctorInfo {
+  flex: 2;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -168,13 +184,8 @@ input {
 }
 
 .fee {
-  width: 100%;
   background-color: #f5f5f5;
-}
-
-.feeTextSize {
-  font-size: var(--font-size-h1);
-  font-weight: bold;
+  border-radius: 20px;
 }
 
 .fee:hover {
@@ -182,18 +193,128 @@ input {
   color: #3264fe;
 }
 
-@media (max-width: 767px) {
-  .card {
-    grid-template-columns: repeat(auto-fit, minmax(2800px, 1fr));
-  }
+.feeTextSize {
+  font-size: var(--font-size-h1);
+  font-weight: bold;
+}
+
+/* Base Footer Styling */
+/* Base Footer Styling */
+/* General Footer Styles */
+.footer {
+  max-width: 100vw;
+  min-height: 44vh;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: black;
+}
+
+.footer-content {
+  width: 70%;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  place-items: start;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation and Titles */
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: yellowgreen;
+  font-weight: bold;
+}
+
+.link {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.services,
+.Company,
+.store {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 80%;
+  color: white;
+  gap: 10px;
+}
+.services a,
+.Company a,
+.Legal a {
+  font-size: var(--font-size-p);
+}
+
+.store h1 {
+  font-size: var(--font-size-h1);
+}
+
+/* Form Styling */
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.label-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #2563eb;
+}
+
+.btn {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1742b0;
 }
 
 /* Medium screens and below (tablets) */
 @media (max-width: 1024px) {
+  :root {
+    --font-size-h1: clamp(10px, 5vw, 40px);
+  }
   .card {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
   }
-
   .fee {
     width: 100%;
     padding: 10px;
@@ -221,5 +342,13 @@ input {
   }
   .middleSide {
     padding-left: 45px;
+  }
+  .feeTextSize {
+    font-size: 25px;
+  }
+  .footer-content {
+    place-items: center;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
