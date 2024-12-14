@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="consultation.css" />
+    <link rel="stylesheet" href="consultation.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <title>Consultation - Doctor Website</title>
+  </head>
+  <body>
+    <!-- Header to insert the Navbar -->
+    <header id="header">
+
+    </header>
+
+    <!-- Main Content for Consultation -->
+    <main>
+      <div class="consultationContainer">
+        <h1>Please select a speciality</h1>
+        <div class="gridDiv" id="gridDiv">
+
+          <!-- Card content can be added here -->
+           
+        </div>
+        <div class="gridDiv" id="gridDiv"></div>
+      </div>
+    </main>
+
+    
+
+    <!-- Include the loadHtml.js file -->
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        loadHtml('nav.html', 'header'); // Ensure the path to nav.html is correct
+      });
+    </script>
+    <script type="module" src="consultation.js"></script>
+    <script src="loadHtml.js"></script>
+  </body>
+</html>

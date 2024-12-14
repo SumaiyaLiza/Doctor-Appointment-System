@@ -1,0 +1,452 @@
+[
+  {
+    "id": "D001",
+    "name": "Dr. Tamim Islam",
+    "qualifications": "MBBS, BSC (Health), MD (Pediatric Hematology & Oncology)",
+    "specialties": [1, 2],
+    "working_in": "Satkhira Medical College Hospital, Satkhira",
+    "experience": "12+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 3
+    },
+    "fee": {
+      "amount": 520,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/244578/profile_photos/QBssJtiJpw7Gvqvra3YKL6gDn7aLYT0IOamHmvPe.jpg",
+    "online": true,
+    "available_in_next_2_hours": true,
+    "available_today": false,
+    "gender": "male"
+  },
+  {
+    "id": "D002",
+    "name": "Dr. Ayesha Siddiqua",
+    "qualifications": "MBBS, FCPS (Gynecology)",
+    "specialties": [3, 20],
+    "working_in": "Dhaka Medical College Hospital, Dhaka",
+    "experience": "10+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 4
+    },
+    "fee": {
+      "amount": 650,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/556415/profile_photos/GIpEZ9zdyETvfwFNGH53KByS2OsHcG5CepAtD6FT.png",
+    "online": true,
+    "available_in_next_2_hours": true,
+    "available_today": true,
+    "gender": "female"
+  },
+  {
+    "id": "D003",
+    "name": "Dr. Rezaul Karim",
+    "qualifications": "MBBS, MD (Cardiology)",
+    "specialties": [5],
+    "working_in": "Square Hospital, Dhaka",
+    "experience": "15+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 5
+    },
+    "fee": {
+      "amount": 1000,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/225746/profile_photos/GBvZurvfTntyjpewnYgOazcnlQRhVQfmws9AUvWL.jpg",
+    "online": true,
+    "available_in_next_2_hours": true,
+    "available_today": true,
+    "gender": "male"
+  },
+  {
+    "id": "D004",
+    "name": "Dr. Nusrat Jahan",
+    "qualifications": "MBBS, MD (Dermatology)",
+    "specialties": [7],
+    "working_in": "United Hospital, Dhaka",
+    "experience": "8+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 4
+    },
+    "fee": {
+      "amount": 800,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/367244/profile_photos/NusratProfile.jpg",
+    "online": true,
+    "available_in_next_2_hours": true,
+    "available_today": true,
+    "gender": "female"
+  },
+  {
+    "id": "D005",
+    "name": "Dr. Khaled Mahmud",
+    "qualifications": "MBBS, FCPS (Surgery)",
+    "specialties": [12],
+    "working_in": "Apollo Hospitals, Dhaka",
+    "experience": "20+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 5
+    },
+    "fee": {
+      "amount": 1500,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/925788/profile_photos/KhaledProfile.jpg",
+    "online": true,
+    "available_in_next_2_hours": true,
+    "available_today": true,
+    "gender": "male"
+  },
+  {
+    "id": "D006",
+    "name": "Dr. Nusrat Sharmin",
+    "qualifications": "MBBS, FCPS (Dermatology)",
+    "specialties": [4],
+    "working_in": "Ibn Sina Hospital, Dhaka",
+    "experience": "9+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 4
+    },
+    "fee": {
+      "amount": 500,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/659327/profile_photos/KmJq620yki50A5edZBKg3U6MggBmAvcNiTu25PdU.jpg",
+    "available_in_next_2_hours": true,
+    "available_today": true,
+    "gender": "Female"
+  },
+  {
+    "id": "D007",
+    "name": "Dr. Kamal Uddin",
+    "qualifications": "MBBS, MS (ENT)",
+    "specialties": [11],
+    "working_in": "Bangabandhu Sheikh Mujib Medical University, Dhaka",
+    "experience": "14+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 5
+    },
+    "fee": {
+      "amount": 800,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/677245/profile_photos/wH18JRdzmY1uoPXpseziQxzyoNpo5dJTJzcDlA0V.jpg",
+    "available_in_next_2_hours": false,
+    "available_today": true,
+    "gender": "Male"
+  },
+  {
+    "id": "D008",
+    "name": "Dr. Humayun Kabir",
+    "qualifications": "MBBS, MD (Nephrology)",
+    "specialties": [14],
+    "working_in": "Chittagong Medical College Hospital, Chittagong",
+    "experience": "20+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 5
+    },
+    "fee": {
+      "amount": 950,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/4126887/profile_photos/8BqhDFORuOb7EZR0X0Dc5BxHivlWH88bZWu7Zr0k.png",
+    "available_in_next_2_hours": true,
+    "available_today": false,
+    "gender": "Male"
+  },
+  {
+    "id": "D009",
+    "name": "Dr. Jannatul Ferdous",
+    "qualifications": "MBBS, MS (Ophthalmology)",
+    "specialties": [10],
+    "working_in": "National Institute of Ophthalmology, Dhaka",
+    "experience": "12+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 4
+    },
+    "fee": {
+      "amount": 600,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/944578/profile_photos/ABssKtiJpw7Gvqvrb5YKX6gDn7aLYT6IOamHmvPe.jpg",
+    "available_in_next_2_hours": false,
+    "available_today": true,
+    "gender": "Female"
+  },
+  {
+    "id": "D010",
+    "name": "Dr. Sajid Mahmud",
+    "qualifications": "MBBS, FCPS (Medicine)",
+    "specialties": [1],
+    "working_in": "Holy Family Red Crescent Medical College, Dhaka",
+    "experience": "11+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 3
+    },
+    "fee": {
+      "amount": 400,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/91999/profile_photos/E4b9Wb1xIrGK4RLYay9BYPJ97Rz2bgEzWvVlSqng.jpg",
+    "available_in_next_2_hours": true,
+    "available_today": false,
+    "gender": "Male"
+  },
+  {
+    "id": "D011",
+    "name": "Dr. Ayesha Rahman",
+    "qualifications": "MBBS, MS (Cardiology)",
+    "specialties": [7],
+    "working_in": "National Heart Institute, Dhaka",
+    "experience": "15+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 4
+    },
+    "fee": {
+      "amount": 500,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/69/profile_photos/UnWzT2rhaLXj3w19T7QNop0c8L6NIyvMKMxXcRuA.png",
+    "available_in_next_2_hours": true,
+    "available_today": true,
+    "gender": "Female"
+  },
+  {
+    "id": "D012",
+    "name": "Dr. Faisal Karim",
+    "qualifications": "MBBS, MD (Neurology)",
+    "specialties": [12],
+    "working_in": "Bangabandhu Sheikh Mujib Medical University, Dhaka",
+    "experience": "9+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 5
+    },
+    "fee": {
+      "amount": 600,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/123577/profile_photos/aLTRMjpgUgHcHTUaUyUdxXiDTZwsFrqCoxPOKQA3.jpg",
+    "available_in_next_2_hours": false,
+    "available_today": true,
+    "gender": "Male"
+  },
+  {
+    "id": "D013",
+    "name": "Dr. Nilufar Yasmin",
+    "qualifications": "MBBS, DGO (Gynecology)",
+    "specialties": [5],
+    "working_in": "Dhaka Medical College Hospital, Dhaka",
+    "experience": "10+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 4
+    },
+    "fee": {
+      "amount": 450,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/176438/profile_photos/mXWVXbRARcpOOxfmD9Bb7tVvDDRoLGAcuLMx2hUq.png",
+    "available_in_next_2_hours": true,
+    "available_today": true,
+    "gender": "Female"
+  },
+  {
+    "id": "D014",
+    "name": "Dr. Imran Hossain",
+    "qualifications": "MBBS, FCPS (Orthopedics)",
+    "specialties": [18],
+    "working_in": "United Hospital, Dhaka",
+    "experience": "13+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 5
+    },
+    "fee": {
+      "amount": 550,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/7059/profile_photos/KY5YDTZqGEUrfmYfknB2liTtocYRD37S4chHW0ny.png",
+    "available_in_next_2_hours": true,
+    "available_today": true,
+    "gender": "Male"
+  },
+  {
+    "id": "D015",
+    "name": "Dr. Shama Sultana",
+    "qualifications": "MBBS, MPH (Public Health)",
+    "specialties": [2],
+    "working_in": "Apollo Hospital, Dhaka",
+    "experience": "8+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 3
+    },
+    "fee": {
+      "amount": 400,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/11343884/profile_photos/VlPiQFqMjQRICWodyPXOEosiudvFOjURLUPx2cte.png",
+    "available_in_next_2_hours": false,
+    "available_today": true,
+    "gender": "Female"
+  },
+  {
+    "id": "D016",
+    "name": "Dr. Ayesha Siddiqua",
+    "qualifications": "MBBS, FCPS (Dermatology), MD (Cosmetology)",
+    "specialties": [1, 2],
+    "working_in": "Dhaka Medical College Hospital, Dhaka",
+    "experience": "8+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 4
+    },
+    "fee": {
+      "amount": 700,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/13916289/profile_photos/RU5AuXi52I9ecP4TaAT5shG3C1ISsE5ec5Xz99nB.png",
+    "online": true,
+    "available_in_next_2_hours": false,
+    "available_today": true,
+    "gender": "female"
+  },
+  {
+    "id": "D017",
+    "name": "Dr. Rahat Hossain",
+    "qualifications": "MBBS, MS (Cardiology)",
+    "specialties": [1, 2],
+    "working_in": "Bangabandhu Sheikh Mujib Medical University, Dhaka",
+    "experience": "15+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 5
+    },
+    "fee": {
+      "amount": 1000,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/1645211/profile_photos/FNdjfKAdL5rogcYaxcht3SZsRBQtH169UmtpVjib.jpg",
+    "online": false,
+    "available_in_next_2_hours": false,
+    "available_today": true,
+    "gender": "male"
+  },
+  {
+    "id": "D018",
+    "name": "Dr. Sabrina Ahmed",
+    "qualifications": "MBBS, DGO, FCPS (Gynecology)",
+    "specialties": [1, 2],
+    "working_in": "Chattogram Medical College Hospital, Chattogram",
+    "experience": "10+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 4
+    },
+    "fee": {
+      "amount": 850,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/228690/profile_photos/fOG41thlXqTov4iijhDbkyfb6R1OAmUYWZodMjiW.jpg",
+    "online": true,
+    "available_in_next_2_hours": true,
+    "available_today": false,
+    "gender": "female"
+  },
+  {
+    "id": "D019",
+    "name": "Dr. Mahmud Alam",
+    "qualifications": "MBBS, MS (Orthopedics), Fellowship in Sports Medicine",
+    "specialties": [1, 2],
+    "working_in": "Rajshahi Medical College Hospital, Rajshahi",
+    "experience": "20+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 4
+    },
+    "fee": {
+      "amount": 750,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/525421/profile_photos/psxEa6fWtkd3R4ypW0Dxlx05cLvVknRoYFX4BWrj.jpg",
+    "online": false,
+    "available_in_next_2_hours": false,
+    "available_today": true,
+    "gender": "male"
+  },
+  {
+    "id": "D020",
+    "name": "Dr. Nusrat Jahan",
+    "qualifications": "MBBS, MD (Psychiatry)",
+    "specialties": [1, 2],
+    "working_in": "Sylhet MAG Osmani Medical College, Sylhet",
+    "experience": "12+ Years",
+    "rating": {
+      "total_stars": 5,
+      "given_stars": 3
+    },
+    "fee": {
+      "amount": 600,
+      "currency": "BDT",
+      "details": "Incl VAT",
+      "per_consultation": true
+    },
+    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/persons/122339/profile_photos/FucfLGaVaf3aTUNkhVpqYehDHeXUscpPMjCelRaj.jpg",
+    "online": true,
+    "available_in_next_2_hours": true,
+    "available_today": false,
+    "gender": "female"
+  }
+]

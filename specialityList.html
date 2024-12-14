@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../nav/nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./specialityList.css" />
+    <title>Doctor Website</title>
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <section class="rowsContainer">
+      <main>
+        <div class="FilterSide">
+          <h1>Filter</h1>
+          <div>
+            <div>
+              <h1>Consultation Fee Range</h1>
+              <div class="wrapper">
+                <div class="values">
+                  <span id="range1"> 0 </span>
+                  <span> &dash; </span>
+                  <span id="range2"> 100 </span>
+                </div>
+                <div class="container">
+                  <div class="slider-track"></div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="30"
+                    id="slider-1"
+                    oninput="slideOne()"
+                  />
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="70"
+                    id="slider-2"
+                    oninput="slideTwo()"
+                  />
+                </div>
+              </div>
+            </div>
+            <ul class="consultationFilter">
+              <li>
+                <label>
+                  <input name="onlinenow" type="checkbox" />
+                  <p>Online Now</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input name="nexthoursAvailable" type="checkbox" />
+                  <p>Available in next 2 hours</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input name="todayAvailable" type="checkbox" />
+                  <p>Available today</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input name="female" type="checkbox" />
+                  <p>Female Doctors only</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input name="male" type="checkbox" />
+                  <p>Male Doctors only</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sortByContainer">
+            <h1>Sort By</h1>
+            <ul class="sortByFilter">
+              <li>
+                <label>
+                  <input type="checkbox" name="default" id="relevance" />
+                  <p>Relevance (Default)</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="popularity" />
+                  <p>Popularity</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="fees-low-to-high" />
+                  <p>Fees: Low to High</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input
+                    id="checkbox"
+                    type="checkbox"
+                    name="fees-high-to-low"
+                  />
+
+                  <p>High to Low</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cardContainer"></div>
+      </main>
+    </section>
+
+    <footer class="footer flexCenter"></footer>
+
+    <script type="module" src="specialityList.js"></script>
+  </body>
+</html>
