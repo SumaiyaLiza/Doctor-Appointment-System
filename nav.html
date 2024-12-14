@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="nav.css" />
-    <title>Navber</title>
+    <link rel="stylesheet" href="./nav.css" />
+    <title>Stylish Navbar</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
         <div class="navlist">
+          <!-- Logo Section -->
           <div class="logo-container">
             <img src="logo.png" alt="DocTime Logo" class="logo" />
             <div class="logo-text">
@@ -18,31 +19,47 @@
             </div>
           </div>
 
+          <!-- Responsive Menu Icon -->
           <div class="menu-icon" onclick="toggleMenu()">
-            <img src="menu-icon.svg" alt="" />
+            <img src="menu-icon.svg" alt="Menu" />
           </div>
-          <ul class="navitem">
+
+          <!-- Navigation Items -->
+          <ul class="navitem" id="navMenu">
             <li id="consultation" class="listItem">
               <a href="consultation.html">Consultation</a>
             </li>
-            <li class="listItem">Health Plans</li>
-            <li class="listItem">Home Diagnostics</li>
+            <li class="listItem"><a href="#">Health Plans</a></li>
+            <li class="listItem"><a href="#">Home Diagnostics</a></li>
             <li class="listItem">
-              <a href="./Ngo/Ngo.html"> Employers & NGOs </a>
+              <a href="Ngo.html">Employers & NGOs</a>
             </li>
-
-            <li class="listItem">For Doctors</li>
+            <li class="listItem"><a href="#">For Doctors</a></li>
           </ul>
-          <button
-          class="btn"
-          type="button"
-          onclick="window.location.href='./login/login.php';"
-        >
-          Log in
-        </button>
-        
+
+          <!-- Login Button -->
+          <button class="btn" type="button" onclick="window.location.href='./login.php';">
+            Log in
+          </button>
         </div>
       </div>
     </nav>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById('navMenu').classList.toggle('active');
+        document.querySelector('.menu-icon img').classList.toggle('active');
+      }
+
+      // Change navbar background color on scroll
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    </script>
   </body>
 </html>

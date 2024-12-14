@@ -8,82 +8,93 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="./specialityList.css" />
+    <link rel="stylesheet" href="specialityList.css" />
     <title>Doctor Website</title>
   </head>
   <body>
+    <!-- Header -->
     <header id="header"></header>
 
     <section class="rowsContainer">
       <main>
+        <!-- Filter Sidebar -->
         <div class="FilterSide">
           <h1>Filter</h1>
+
+          <!-- Consultation Fee Range -->
           <div>
-            <div>
-              <h1>Consultation Fee Range</h1>
-              <div class="wrapper">
-                <div class="values">
-                  <span id="range1"> 0 </span>
+            <h2>Consultation Fee Range</h2>
+            <div class="wrapper">
+              <div class="values">
+                <span id="range1"> 0 </span>
+                <span> &dash; </span>
+                <span id="range2"> 100 </span>
+              </div>
+              <div class="container">
+                <div class="slider-track"></div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="30"
+                  id="slider-1"
+                  oninput="slideOne()"
+                />
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="70"
+                  id="slider-2"
+                  oninput="slideTwo()"
+                />
+                <div>
+                  <span id="range1">30</span>
                   <span> &dash; </span>
-                  <span id="range2"> 100 </span>
-                </div>
-                <div class="container">
-                  <div class="slider-track"></div>
-                  <input
-                    type="range"
-                    min="0"
-                    max="100"
-                    value="30"
-                    id="slider-1"
-                    oninput="slideOne()"
-                  />
-                  <input
-                    type="range"
-                    min="0"
-                    max="100"
-                    value="70"
-                    id="slider-2"
-                    oninput="slideTwo()"
-                  />
+                  <span id="range2">70</span>
                 </div>
               </div>
+              
             </div>
-            <ul class="consultationFilter">
-              <li>
-                <label>
-                  <input name="onlinenow" type="checkbox" />
-                  <p>Online Now</p>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input name="nexthoursAvailable" type="checkbox" />
-                  <p>Available in next 2 hours</p>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input name="todayAvailable" type="checkbox" />
-                  <p>Available today</p>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input name="female" type="checkbox" />
-                  <p>Female Doctors only</p>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input name="male" type="checkbox" />
-                  <p>Male Doctors only</p>
-                </label>
-              </li>
-            </ul>
           </div>
 
+          <!-- Consultation Filters -->
+          <ul class="consultationFilter">
+            <li>
+              <label>
+                <input name="onlinenow" type="checkbox" />
+                <p>Online Now</p>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="nexthoursAvailable" type="checkbox" />
+                <p>Available in next 2 hours</p>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="todayAvailable" type="checkbox" />
+                <p>Available today</p>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="female" type="checkbox" />
+                <p>Female Doctors only</p>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="male" type="checkbox" />
+                <p>Male Doctors only</p>
+              </label>
+            </li>
+          </ul>
+
+          <!-- Sort By Filters -->
           <div class="sortByContainer">
-            <h1>Sort By</h1>
+            <h2>Sort By</h2>
             <ul class="sortByFilter">
               <li>
                 <label>
@@ -110,19 +121,28 @@
                     type="checkbox"
                     name="fees-high-to-low"
                   />
-
                   <p>High to Low</p>
                 </label>
               </li>
             </ul>
           </div>
         </div>
+
         <div class="cardContainer"></div>
       </main>
     </section>
 
-    <footer class="footer flexCenter"></footer>
+    <!-- Footer -->
+    <footer id="footer"></footer>
 
+    <!-- JavaScript to load header and footer -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        loadHtml('nav.html', 'header'); 
+        loadHtml('footer.html', 'footer');
+      });
+    </script>
+    <script src="loadHtml.js"></script>
     <script type="module" src="specialityList.js"></script>
   </body>
 </html>

@@ -87,6 +87,19 @@ li > a {
   list-style: none;
 }
 
+/* Remove underline from all list items */
+li > a {
+  color: black;
+  list-style: none;
+  text-decoration: none; /* This removes the underline */
+}
+
+/* Optional: Add hover effects without underline */
+li > a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+
 @media (min-width: 769px) and (max-width: 1024px) {
 }
 

@@ -1,124 +1,128 @@
 :root {
-  --primary-color: #3498db;
-  --font-size-h1: clamp(25px, 6vw, 40px); /* h1 font size */
-  --font-size-p: clamp(16px, 2.4vw, 20px); /* p font size */
-  --font-size-title: clamp(18px, 4vw, 27px); /* p font size */
+  --primary-color: #6c5ce7; /* Primary card color */
+  --secondary-color: #00cec9; /* Secondary hover accent */
+  --gradient-bg: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  --text-color: #ffffff;
+  --hover-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
 }
 
-.flexCol {
+main {
+  padding-top: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Container Styles */
+.consultationContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+.consultationContainer h1 {
+  font-size: 48px;
+  color: #333;
+  margin-top: 20px;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+  color: var(--secondary-color);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gridDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+/* Stylish Card */
+.card {
+  background: var(--gradient-bg);
+  border-radius: 15px;
+  color: var(--text-color);
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.flexCenter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main {
-  padding-top: 100px;
-  max-width: 1400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* consultationContainer */
-
-.consultationContainer {
-  width: 100%;
-}
-
-.consultationContainer h1 {
-  font-size: var(--font-size-h1);
-}
-.consultationContainer p {
-  font-size: var(--font-size-p);
-}
-.consultationContainer span {
-  font-size: var(--font-size-title);
-}
-
-.gridDiv {
-  width: 100%;
-  /* height: 1000px; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-  gap: 3rem;
-}
-
-.card {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 1.5rem;
-  padding-left: 0.8rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   gap: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for both transform and box-shadow */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Default shadow */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-/* card animation */
+/* Hover Effect */
 .card:hover {
-  transform: scale(1.04); 
-  cursor: pointer; 
-  z-index: 200; /* Bring the card to the front */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-.cardImgDiv {
-  flex: 1;
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: var(--hover-shadow);
+  background: linear-gradient(135deg, #5f27cd, #00cec9);
+  cursor: pointer;
 }
 
-.cardImgDiv img {
-  width: 85%;
-  object-fit: cover;
+.card::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 0.5;
+  transition: transform 0.6s ease;
 }
 
-.cardTextSide {
-  /* width: 60%; */
-  flex: 3;
-  padding-right: 1rem;
+.card:hover::before {
+  transform: scale(1.5);
+  opacity: 0.7;
 }
 
-@media (max-width: 767px) {
+.card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 3px solid var(--text-color);
+  background-color: #fff;
 }
 
-/* Medium screens and below (tablets) */
-@media (max-width: 1024px) {
-  .card {
-    width: 100%;
-  }
+.card h2 {
+  margin: 0;
+  font-size: var(--font-size-title);
+  font-weight: bold;
 }
 
-/* Large screens and below (laptops) */
-@media (max-width: 1440px) {
-  .consultationContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.card p {
+  margin: 0;
+  font-size: var(--font-size-p);
+  line-height: 1.4;
+}
 
+/* Responsive */
+@media (max-width: 768px) {
   .gridDiv {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    justify-items: center;
+    grid-template-columns: 1fr;
   }
+
   .card {
-    width: 80%;
-    flex-shrink: 1;
+    width: 90%;
+    margin: 0 auto;
   }
 }
