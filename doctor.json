@@ -5,7 +5,7 @@
     "qualifications": "MBBS, BSC (Health), MD (Pediatric Hematology & Oncology)",
     "specialties": [1, 2],
     "working_in": "Satkhira Medical College Hospital, Satkhira",
-    "experience": "12+ Years",
+    "experience": 12,
     "rating": {
       "total_stars": 5,
       "given_stars": 3
@@ -28,7 +28,7 @@
     "qualifications": "MBBS, FCPS (Gynecology)",
     "specialties": [3, 20],
     "working_in": "Dhaka Medical College Hospital, Dhaka",
-    "experience": "10+ Years",
+    "experience": 0,
     "rating": {
       "total_stars": 5,
       "given_stars": 4
@@ -51,7 +51,7 @@
     "qualifications": "MBBS, MD (Cardiology)",
     "specialties": [5],
     "working_in": "Square Hospital, Dhaka",
-    "experience": "15+ Years",
+    "experience": 15,
     "rating": {
       "total_stars": 5,
       "given_stars": 5
@@ -74,7 +74,7 @@
     "qualifications": "MBBS, MD (Dermatology)",
     "specialties": [7],
     "working_in": "United Hospital, Dhaka",
-    "experience": "8+ Years",
+    "experience": 8,
     "rating": {
       "total_stars": 5,
       "given_stars": 4
@@ -97,7 +97,7 @@
     "qualifications": "MBBS, FCPS (Surgery)",
     "specialties": [12],
     "working_in": "Apollo Hospitals, Dhaka",
-    "experience": "20+ Years",
+    "experience": 20,
     "rating": {
       "total_stars": 5,
       "given_stars": 5
@@ -120,7 +120,7 @@
     "qualifications": "MBBS, FCPS (Dermatology)",
     "specialties": [4],
     "working_in": "Ibn Sina Hospital, Dhaka",
-    "experience": "9+ Years",
+    "experience": 9,
     "rating": {
       "total_stars": 5,
       "given_stars": 4
@@ -142,7 +142,7 @@
     "qualifications": "MBBS, MS (ENT)",
     "specialties": [11],
     "working_in": "Bangabandhu Sheikh Mujib Medical University, Dhaka",
-    "experience": "14+ Years",
+    "experience": 14,
     "rating": {
       "total_stars": 5,
       "given_stars": 5
@@ -164,7 +164,7 @@
     "qualifications": "MBBS, MD (Nephrology)",
     "specialties": [14],
     "working_in": "Chittagong Medical College Hospital, Chittagong",
-    "experience": "20+ Years",
+    "experience": 0,
     "rating": {
       "total_stars": 5,
       "given_stars": 5
@@ -186,7 +186,7 @@
     "qualifications": "MBBS, MS (Ophthalmology)",
     "specialties": [10],
     "working_in": "National Institute of Ophthalmology, Dhaka",
-    "experience": "12+ Years",
+    "experience": 12,
     "rating": {
       "total_stars": 5,
       "given_stars": 4
@@ -208,7 +208,7 @@
     "qualifications": "MBBS, FCPS (Medicine)",
     "specialties": [1],
     "working_in": "Holy Family Red Crescent Medical College, Dhaka",
-    "experience": "11+ Years",
+    "experience": 11,
     "rating": {
       "total_stars": 5,
       "given_stars": 3
@@ -230,7 +230,7 @@
     "qualifications": "MBBS, MS (Cardiology)",
     "specialties": [7],
     "working_in": "National Heart Institute, Dhaka",
-    "experience": "15+ Years",
+    "experience": 15,
     "rating": {
       "total_stars": 5,
       "given_stars": 4
@@ -252,7 +252,7 @@
     "qualifications": "MBBS, MD (Neurology)",
     "specialties": [12],
     "working_in": "Bangabandhu Sheikh Mujib Medical University, Dhaka",
-    "experience": "9+ Years",
+    "experience": 9,
     "rating": {
       "total_stars": 5,
       "given_stars": 5
@@ -274,7 +274,7 @@
     "qualifications": "MBBS, DGO (Gynecology)",
     "specialties": [5],
     "working_in": "Dhaka Medical College Hospital, Dhaka",
-    "experience": "10+ Years",
+    "experience": 10,
     "rating": {
       "total_stars": 5,
       "given_stars": 4
@@ -296,7 +296,7 @@
     "qualifications": "MBBS, FCPS (Orthopedics)",
     "specialties": [18],
     "working_in": "United Hospital, Dhaka",
-    "experience": "13+ Years",
+    "experience": 13,
     "rating": {
       "total_stars": 5,
       "given_stars": 5
@@ -318,7 +318,7 @@
     "qualifications": "MBBS, MPH (Public Health)",
     "specialties": [2],
     "working_in": "Apollo Hospital, Dhaka",
-    "experience": "8+ Years",
+    "experience": 8,
     "rating": {
       "total_stars": 5,
       "given_stars": 3
@@ -340,7 +340,7 @@
     "qualifications": "MBBS, FCPS (Dermatology), MD (Cosmetology)",
     "specialties": [1, 2],
     "working_in": "Dhaka Medical College Hospital, Dhaka",
-    "experience": "8+ Years",
+    "experience":8,
     "rating": {
       "total_stars": 5,
       "given_stars": 4
@@ -363,7 +363,7 @@
     "qualifications": "MBBS, MS (Cardiology)",
     "specialties": [1, 2],
     "working_in": "Bangabandhu Sheikh Mujib Medical University, Dhaka",
-    "experience": "15+ Years",
+    "experience": 5,
     "rating": {
       "total_stars": 5,
       "given_stars": 5
@@ -386,7 +386,7 @@
     "qualifications": "MBBS, DGO, FCPS (Gynecology)",
     "specialties": [1, 2],
     "working_in": "Chattogram Medical College Hospital, Chattogram",
-    "experience": "10+ Years",
+    "experience": 0,
     "rating": {
       "total_stars": 5,
       "given_stars": 4
@@ -409,7 +409,7 @@
     "qualifications": "MBBS, MS (Orthopedics), Fellowship in Sports Medicine",
     "specialties": [1, 2],
     "working_in": "Rajshahi Medical College Hospital, Rajshahi",
-    "experience": "20+ Years",
+    "experience": 0,
     "rating": {
       "total_stars": 5,
       "given_stars": 4
@@ -432,7 +432,7 @@
     "qualifications": "MBBS, MD (Psychiatry)",
     "specialties": [1, 2],
     "working_in": "Sylhet MAG Osmani Medical College, Sylhet",
-    "experience": "12+ Years",
+    "experience": 2,
     "rating": {
       "total_stars": 5,
       "given_stars": 3

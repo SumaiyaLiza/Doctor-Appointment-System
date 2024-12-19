@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../nav/nav.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="specialityList.css" />
     <title>Doctor Website</title>
   </head>
@@ -15,9 +12,7 @@
     <!-- Header -->
     <header id="header"></header>
 
-    <div style="margin-top: 100px ;">
-
-    </div>
+    <div style="margin-top: 100px"></div>
 
     <section class="rowsContainer">
       <main>
@@ -25,7 +20,7 @@
         <div class="FilterSide">
           <h1>Filters</h1>
           <button class="resetButton">Reset</button>
-          
+
           <!-- Consultation Fee Slider -->
           <h2>Consultation Fee</h2>
           <div class="wrapper">
@@ -35,77 +30,103 @@
             </div>
             <div class="container">
               <div class="slider-track"></div>
-              <input type="range" min="0" max="8000" value="0">
+              <input type="range" min="0" max="8000" value="0" />
             </div>
           </div>
-        
+
           <!-- Checkbox Filters -->
           <div class="consultationFilter">
             <ul>
               <li>
-                <input type="checkbox" id="onlineNow">
-                <label for="onlineNow">Online Now</label>
+                <input type="checkbox" id="online" />
+                <label for="online">Online Now</label>
               </li>
               <li>
-                <input type="checkbox" id="next2Hours">
-                <label for="next2Hours">Available in next 2 hours</label>
+                <input type="checkbox" id="nexthoursAvailable" />
+                <label for="nexthoursAvailable"
+                  >Available in next 2 hours</label
+                >
               </li>
               <li>
-                <input type="checkbox" id="availableToday">
+                <input type="checkbox" id="availableToday" />
                 <label for="availableToday">Available today</label>
               </li>
               <li>
-                <input type="checkbox" id="femaleDoctorsOnly">
+                <input type="checkbox" id="femaleDoctorsOnly" />
                 <label for="femaleDoctorsOnly">Female doctors only</label>
               </li>
             </ul>
           </div>
-        
+
+          <!-- Sort By Section -->
           <!-- Sort By Section -->
           <h2>Sort By</h2>
           <div class="sortByFilter">
             <ul>
               <li>
-                <input type="radio" id="relevance" name="sort" checked>
+                <input
+                  type="radio"
+                  id="relevance"
+                  name="sort"
+                  checked
+                  data-sort="default"
+                />
                 <label for="relevance">Relevance (Default)</label>
               </li>
               <li>
-                <input type="radio" id="popularity" name="sort">
+                <input
+                  type="radio"
+                  id="popularity"
+                  name="sort"
+                  data-sort="popularity"
+                />
                 <label for="popularity">Popularity</label>
               </li>
               <li>
-                <input type="radio" id="feesLowHigh" name="sort">
-                <label for="feesLowHigh">Fees: low to high</label>
+                <input
+                  type="radio"
+                  id="fees-low-to-high"
+                  name="sort"
+                  data-sort="fees-low-to-high"
+                />
+                <label for="fees-low-to-high">Fees: low to high</label>
               </li>
               <li>
-                <input type="radio" id="feesHighLow" name="sort">
+                <input
+                  type="radio"
+                  id="feesHighLow"
+                  name="sort"
+                  data-sort="fees-high-to-low"
+                />
                 <label for="feesHighLow">Fees: high to low</label>
               </li>
               <li>
-                <input type="radio" id="ratingSort" name="sort">
-                <label for="ratingSort">Rating</label>
+                <input
+                  type="radio"
+                  id="rating"
+                  name="sort"
+                  data-sort="rating"
+                />
+                <label for="rating">Rating</label> <!-- Use "rating" to match the input's ID -->
               </li>
+              
               <li>
-                <input type="radio" id="experienceSort" name="sort">
+                <input
+                  type="radio"
+                  id="experienceSort"
+                  name="sort"
+                  data-sort="experience"
+                />
                 <label for="experienceSort">Experience</label>
-              </li>
-              <li>
-                <input type="radio" id="specialistFirst" name="sort">
-                <label for="specialistFirst">Specialist First</label>
-              </li>
-              <li>
-                <input type="radio" id="rankingSort" name="sort">
-                <label for="rankingSort">Ranking</label>
               </li>
             </ul>
           </div>
         </div>
-         
+
         <!-- Card Container -->
         <div class="cardContainer"></div>
       </main>
     </section>
-    
 
     <!-- Footer -->
     <!-- <div id="footer">
@@ -114,12 +135,12 @@
 
     <!-- JavaScript to load header and footer -->
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        loadHtml('nav.html', 'header'); 
-        loadHtml('footer.html', 'footer');
+      document.addEventListener("DOMContentLoaded", () => {
+        loadHtml("nav.html", "header");
+        loadHtml("footer.html", "footer");
       });
     </script>
     <script src="loadHtml.js"></script>
-    <script type="module" src="./specialityList.js"></script>
+    <script type="module" src="specialityList.js"></script>
   </body>
 </html>

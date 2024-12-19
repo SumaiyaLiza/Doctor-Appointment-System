@@ -17,8 +17,16 @@
       <div class="bannerImg"></div>
     </main>
 
-    <footer class="footer flexCenter"></footer>
+    <div id="footer">
 
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        loadHtml('nav.html', 'header'); 
+        loadHtml('footer.html', 'footer');
+      });
+    </script>
+    <script src="loadHtml.js"></script>
     <script type="module" src="ngo.js"></script>
   </body>
 </html>

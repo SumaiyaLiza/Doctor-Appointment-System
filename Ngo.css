@@ -61,3 +61,7 @@ main {
   background-size: cover;
   background-image: url("https://doctime.com.bd/images/b_to_b/hero_Image.png");
 }
+
+#footer{
+  width: 100vw;
+}
