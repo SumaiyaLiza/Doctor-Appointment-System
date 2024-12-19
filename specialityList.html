@@ -15,125 +15,102 @@
     <!-- Header -->
     <header id="header"></header>
 
+    <div style="margin-top: 100px ;">
+
+    </div>
+
     <section class="rowsContainer">
       <main>
         <!-- Filter Sidebar -->
         <div class="FilterSide">
-          <h1>Filter</h1>
-
-          <!-- Consultation Fee Range -->
-          <div>
-            <h2>Consultation Fee Range</h2>
-            <div class="wrapper">
-              <div class="values">
-                <span id="range1"> 0 </span>
-                <span> &dash; </span>
-                <span id="range2"> 100 </span>
-              </div>
-              <div class="container">
-                <div class="slider-track"></div>
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value="30"
-                  id="slider-1"
-                  oninput="slideOne()"
-                />
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value="70"
-                  id="slider-2"
-                  oninput="slideTwo()"
-                />
-                <div>
-                  <span id="range1">30</span>
-                  <span> &dash; </span>
-                  <span id="range2">70</span>
-                </div>
-              </div>
-              
+          <h1>Filters</h1>
+          <button class="resetButton">Reset</button>
+          
+          <!-- Consultation Fee Slider -->
+          <h2>Consultation Fee</h2>
+          <div class="wrapper">
+            <div class="values">
+              <span>0</span>
+              <span>8000</span>
+            </div>
+            <div class="container">
+              <div class="slider-track"></div>
+              <input type="range" min="0" max="8000" value="0">
             </div>
           </div>
-
-          <!-- Consultation Filters -->
-          <ul class="consultationFilter">
-            <li>
-              <label>
-                <input name="onlinenow" type="checkbox" />
-                <p>Online Now</p>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input name="nexthoursAvailable" type="checkbox" />
-                <p>Available in next 2 hours</p>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input name="todayAvailable" type="checkbox" />
-                <p>Available today</p>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input name="female" type="checkbox" />
-                <p>Female Doctors only</p>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input name="male" type="checkbox" />
-                <p>Male Doctors only</p>
-              </label>
-            </li>
-          </ul>
-
-          <!-- Sort By Filters -->
-          <div class="sortByContainer">
-            <h2>Sort By</h2>
-            <ul class="sortByFilter">
+        
+          <!-- Checkbox Filters -->
+          <div class="consultationFilter">
+            <ul>
               <li>
-                <label>
-                  <input type="checkbox" name="default" id="relevance" />
-                  <p>Relevance (Default)</p>
-                </label>
+                <input type="checkbox" id="onlineNow">
+                <label for="onlineNow">Online Now</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="popularity" />
-                  <p>Popularity</p>
-                </label>
+                <input type="checkbox" id="next2Hours">
+                <label for="next2Hours">Available in next 2 hours</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="fees-low-to-high" />
-                  <p>Fees: Low to High</p>
-                </label>
+                <input type="checkbox" id="availableToday">
+                <label for="availableToday">Available today</label>
               </li>
               <li>
-                <label>
-                  <input
-                    id="checkbox"
-                    type="checkbox"
-                    name="fees-high-to-low"
-                  />
-                  <p>High to Low</p>
-                </label>
+                <input type="checkbox" id="femaleDoctorsOnly">
+                <label for="femaleDoctorsOnly">Female doctors only</label>
+              </li>
+            </ul>
+          </div>
+        
+          <!-- Sort By Section -->
+          <h2>Sort By</h2>
+          <div class="sortByFilter">
+            <ul>
+              <li>
+                <input type="radio" id="relevance" name="sort" checked>
+                <label for="relevance">Relevance (Default)</label>
+              </li>
+              <li>
+                <input type="radio" id="popularity" name="sort">
+                <label for="popularity">Popularity</label>
+              </li>
+              <li>
+                <input type="radio" id="feesLowHigh" name="sort">
+                <label for="feesLowHigh">Fees: low to high</label>
+              </li>
+              <li>
+                <input type="radio" id="feesHighLow" name="sort">
+                <label for="feesHighLow">Fees: high to low</label>
+              </li>
+              <li>
+                <input type="radio" id="ratingSort" name="sort">
+                <label for="ratingSort">Rating</label>
+              </li>
+              <li>
+                <input type="radio" id="experienceSort" name="sort">
+                <label for="experienceSort">Experience</label>
+              </li>
+              <li>
+                <input type="radio" id="specialistFirst" name="sort">
+                <label for="specialistFirst">Specialist First</label>
+              </li>
+              <li>
+                <input type="radio" id="rankingSort" name="sort">
+                <label for="rankingSort">Ranking</label>
               </li>
             </ul>
           </div>
         </div>
-
+         
+        <!-- Card Container -->
         <div class="cardContainer"></div>
       </main>
     </section>
+    
 
     <!-- Footer -->
-    <footer id="footer"></footer>
+    <!-- <div id="footer">
+                  
+    </div> -->
 
     <!-- JavaScript to load header and footer -->
     <script>
@@ -143,6 +120,6 @@
       });
     </script>
     <script src="loadHtml.js"></script>
-    <script type="module" src="specialityList.js"></script>
+    <script type="module" src="./specialityList.js"></script>
   </body>
 </html>

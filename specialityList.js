@@ -156,51 +156,44 @@ function renderRowCards(getdoctor) {
 
   // Create card using template literals
   const cardHTML = `
-    <div class="card" id="${id}">
-      <div class="leftSide">
-        <div class="imgDiv">
-          <img class="img" src="${image}" alt="${name}" />
-        </div>
-        <div class="doctorInfo">
-          <h2>${name}</h2>
-          <p>${qualifications}</p>
-          <span style="color: #d1d1d1">Specialities</span>
-          <p>${renderSpecialties(specialties)}</p>
-        </div>
+   <div class="cardContainer">
+  <div class="card" id="${id}">
+    <div class="leftSide">
+      <div class="imgDiv">
+        <img class="img" src="${image}" alt="${name}" />
       </div>
-      <div class="middleSide flexCol">
-        <div class="working">
-          <p style="color: #d1d1d1">Working in</p>
-          <p style="font-weight: bold; font-size: 1.1rem">${working_in}</p>
-        </div>
-        <div class="exprerienceRating">
-          <div class="exprerience flexCol">
-            <span>Total Experience</span>
-            <span style="font-weight: bold">${experience}</span>
-          </div>
-          <div class="exprerience flexCol">
-            <span>Total Rating</span>
-            <div class="rating">
-              ${renderStars(rating.total_stars, rating.given_stars)}
-            </div>
-          </div>
-        </div>
+      <div class="doctorInfo">
+        <h2>${name} <span class="status">●</span></h2>
+        <p class="qualification">${qualifications}</p>
+        <p class="specialties">Specialities: ${renderSpecialties(specialties)}</p>
       </div>
-      <div class="fee flexCenter">
-        <div class="FeeTexts flexCenter flexCol">
-          <p>
-            <span
-              class="feeTextSize"
-        
-            >
-              &#2547; ${fee.amount}
-            </span>
-            <sub>(${fee.details})</sub>
-          </p>
-          <span>${fee.per_consultation ? "Per consultation" : ""}</span>
+    </div>
+    <div class="middleSide">
+      <div class="working">
+        <p class="sectionLabel">Working in</p>
+        <p class="boldText">${working_in}</p>
+      </div>
+      <div class="experienceRating">
+        <div class="experience">
+          <span>Total Experience</span>
+          <span class="boldText">${experience}</span>
+        </div>
+        <div class="rating">
+          <span>Total Rating</span>
+          ${renderStars(rating.total_stars, rating.given_stars)}
         </div>
       </div>
     </div>
+    <div class="rightSide">
+      <div class="fee">
+        <p class="feeAmount">&#2547; ${fee.amount} <sub>(incl. VAT)</sub></p>
+        <p class="perConsultation">Per consultation</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   `;
 
   // Append the card to the container
@@ -235,4 +228,6 @@ selectDoctorFilter();
 renderRowCards();
 checkboxFilter();
 
+
+// Reset button functionality
 

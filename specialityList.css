@@ -8,39 +8,68 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+
+main {
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+body {
   height: 100vh;
   margin: 0;
   background-color: #f4f6f9;
+  padding-left: 10rem;
 }
 
 .FilterSide {
-  width: 300px;
-  padding: 20px;
+  width: 320px;
+  padding: 25px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  height: 720px;
 }
 
+
+
+
 h1 {
-  font-size: 24px;
+  font-size: 1.75rem; /* Use rem for scalability */
   font-weight: 600;
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.125rem; /* Use rem for consistency */
   font-weight: 500;
   color: #555;
   margin-bottom: 1rem;
 }
 
-.wrapper {
+.resetButton {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem; /* Consistent font size */
+  font-weight: 600;
   width: 100%;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resetButton:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Adding subtle hover scale effect */
+}
+
+/* Consultation Fee Slider */
+.wrapper {
   margin: 1rem 0;
 }
 
@@ -48,6 +77,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  font-size: 0.875rem; /* Use rem for consistency */
+  color: #333;
 }
 
 .container {
@@ -65,12 +96,12 @@ h2 {
 
 input[type="range"] {
   width: 100%;
-  margin: 0;
   background: transparent;
   appearance: none;
   height: 2px;
   position: relative;
   z-index: 2;
+  transition: background 0.3s ease;
 }
 
 input[type="range"]:focus {
@@ -100,67 +131,157 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
 }
 
-input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #3498db;
+/* Checkbox styles */
+.consultationFilter ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Checkbox styles */
 .consultationFilter ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 label {
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: color 0.3s;
+  font-size: 1rem; /* Consistent size */
+  color: #333;
+  transition: color 0.3s ease;
 }
 
 input {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
-input[type="checkbox"]:checked + p {
+input[type="checkbox"]:checked + label {
   color: #3498db;
 }
-.cardContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+
+/* Sort By Radio Buttons */
+.sortByFilter {
+  list-style: none;
+  padding: 0;
 }
 
+.sortByFilter li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  margin-right: 12px;
+}
+
+input[type="radio"]:checked + label {
+  color: #3498db;
+}
+
+
+/* General Card Styling */
+/* Container */
+.cardContainer {
+  display: grid;
+  margin: 15px;
+}
+
+/* Card layout */
 .card {
+  display: flex;
+  align-items: center;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
-.card img {
-  width: 100%;
-  height: 200px;
+/* Left side for image and doctor info */
+.leftSide {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.imgDiv {
+  margin-right: 15px;
+}
+
+.imgDiv img {
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
-.card .card-content {
-  margin-top: 10px;
-}
-
-.card .card-content h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.card .card-content p {
-  color: #555;
+.doctorInfo h2 {
   font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
 }
+
+
+.doctorInfo .qualification {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.doctorInfo .specialties {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Middle section */
+.middleSide {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.working .boldText {
+  font-weight: bold;
+  color: #333;
+}
+
+.experienceRating {
+  display: flex;
+  gap: 20px;
+}
+
+.experienceRating .experience, .experienceRating .rating {
+  text-align: left;
+}
+
+.experienceRating .rating span {
+  display: block;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+/* Right side for fee */
+.rightSide {
+  text-align: right;
+  flex: 1;
+}
+
+.feeAmount {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.perConsultation {
+  font-size: 0.9rem;
+  color: #666;
+}
+
